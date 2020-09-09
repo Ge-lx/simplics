@@ -1,0 +1,15 @@
+{
+  "name": "simplics",
+  "version": "1.0.0",
+  "description": "Simple HTTP Rest API for usage metrics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "simplics"
+  },
+  "author": "ge-lx",
+  "license": "ISC"
+}
