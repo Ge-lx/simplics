@@ -8,6 +8,17 @@ const configure_routes = (router, knex) => {
     });
 
 
+    router.get('/event/join', async (req, res, next) => {
+        const rows = await knex('events')
+            .select(['id'])
+            .where({ type: 'join' });
+
+        res.json({
+            count: rows.length
+        });
+    });
+
+
     router.put('/event/:type', async (req, res, next) => {
         console.log('got event: ', { type: req.params.type, data: req.body });
         
